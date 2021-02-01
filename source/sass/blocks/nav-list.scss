@@ -2,15 +2,25 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
     padding: 40px 40px;
     margin: 0 auto;
-    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1240px;
     padding-left: 80px;
     padding-right: 80px;
+  }
+}
+
+.nav-list__item {
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+  }
+
+  &:last-child {
+    margin-right: 0;
   }
 }
 

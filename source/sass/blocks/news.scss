@@ -5,36 +5,54 @@
 .news__title {
   position: absolute;
   color: $white;
-  font-size: 70px;
+  font-size: 30px;
   font-weight: 100;
-  line-height: 40px;
-  -webkit-text-stroke: 1px $gray;
-  margin: 0;
-  z-index: 1;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+  min-width: 300px;
+  left: 0;
   top: 30%;
   left: 50%;
-  transform: translate( -50%, -50%);
-  text-align: center;
-  width: 80%;
+  transform: translate(-50%, -50%);
+
+
+  @media (min-width: $tablet-width) {
+    min-width: 700px;
+    font-size: 50px;
+    font-weight: 100;
+    line-height: 75px;
+    -webkit-text-stroke: 1px $gray;
+    top: 40%;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 70px;
+  }
 }
 
 .news__title-picture {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  min-height: 300px;
 }
 
 .news__promo {
   position: absolute;
-  font-size: 15px;
+  font-size: 10px;
+  line-height: 12px;
   color: $white;
   -webkit-text-stroke: 0.5px $gray;
-  max-width: 500px;
-  margin: 0 auto;
-  z-index: 1;
-  top: 80%;
-  left: 50%;
-  transform: translate( -50%, -50%);
+  min-width: 300px;
   text-align: center;
+  margin: 0;
+  z-index: 1;
+  left: 50%;
+  top: 80%;
+  transform: translate( -50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+    line-height: 17px;
+    min-width: 520px;
+  }
 }
