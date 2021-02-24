@@ -1,0 +1,16 @@
+.page {
+  overflow-x: hidden;
+}
+
+.page__body {
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  background-color: $white;
+  color: $black;
+  overflow-x: hidden;
+}
