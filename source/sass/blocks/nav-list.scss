@@ -1,0 +1,28 @@
+.nav-list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 40px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1240px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+.nav-list__item-link {
+  color: $gray;
+  font-size: 12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+  }
+}

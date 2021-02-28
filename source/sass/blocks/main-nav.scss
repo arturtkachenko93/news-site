@@ -1,0 +1,35 @@
+.main-nav {
+  min-height: 50px;
+}
+
+.main-nav__logo {
+  display: flex;
+  width: 147px;
+  height: 27px;
+  margin: 0 auto;
+  margin-top: 10px;
+
+    &--current {
+      pointer-events: none;
+      cursor: none;
+    }
+
+  @media (min-width: $tablet-width) {
+    width: 247px;
+    height: 37px;
+    margin-top: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 347px;
+    height: 47px;
+  }
+}
+
+.main-nav__wrapper {
+  width: 100%;
+}
+
+.main-nav__list {
+  @include list-reset;
+}

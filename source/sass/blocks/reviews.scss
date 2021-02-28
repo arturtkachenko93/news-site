@@ -1,0 +1,23 @@
+.reviews {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.reviews__title {
+  text-align: center;
+  margin: 0;
+}
+
+.reviews__list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1240px;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin: 0 auto;
+}
+
+.reviews__item {
+  width: 300px;
+}
